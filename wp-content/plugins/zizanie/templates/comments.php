@@ -46,13 +46,10 @@
 		
 		?><ol class="commentlist"><?php
 
-			/* Loop through and list the comments. Tell wp_list_comments()
-			 * to use twentyten_comment() to format the comments.
-			 * If you want to overload this in a child theme then you can
-			 * define twentyten_comment() and that will be used instead.
-			 * See twentyten_comment() in twentyten/functions.php for more.
-			 */
-			wp_list_comments( array( 'callback' => 'twentyten_comment' ) );
+			/******************
+			* Display comment
+			*******************/
+			wp_list_comments( array( 'callback' => 'zizanie_comment' ) );
 			
 		?></ol><?php
 		
