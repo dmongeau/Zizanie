@@ -1,3 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.ziz-comments {
+	background:#eee;
+	padding:10px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+li.comment {
+	background:#fff;
+	padding:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
