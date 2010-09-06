@@ -14,3 +14,37 @@ li.comment {
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
+
+.comment-form-author {
+	float:left;
+	width:27%;
+}
+.comment-form-email {
+	float:left;
+	width:33%;
+	padding-left:10px;
+}
+
+.comment-form-url {
+	float:left;
+	width:30%;
+	padding-left:10px;
+}
+.comment-form-rage {
+	clear:left;
+	margin:5px 0;
+	width:275px;
+}
+.comment-form-rage .slider {
+	width:200px;
+	margin-left:10px;
+}
+.comment-form-rage .level {
+	float:right;
+	margin-top:18px;
+}
+
+.comment-form-comment {
+	clear:both;
+	margin-top:10px;
+}

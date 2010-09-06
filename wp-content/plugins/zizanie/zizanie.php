@@ -69,9 +69,10 @@ function ziz_init() {
 add_filter ('comment_form_defaults', 'ziz_comment_form_defaults');
 function ziz_comment_form_defaults($defaults) {
 	
-	$defaults['fields']['rage'] = 	'<p class="comment-form-url"><label for="url">' . __( 'Website' ) . '</label>' .
-		            				'<div class="slider"></div></p>';
-	$defaults['comment_field'] = '<div class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><div class="zizanie-comment-editor"></div></div>';
+	$defaults['fields']['rage'] = 	'<div class="comment-form-rage"><label for="rage">' . __( 'Rage level' ) . '</label>' .
+		            				'<div class="level">0/10</div><div class="slider"></div></div>';
+	$defaults['comment_field'] = 	'<div class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label>' .
+									'<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" class="zizanie-comment-editor"></textarea></div>';
 	
 	return $defaults;
 	
