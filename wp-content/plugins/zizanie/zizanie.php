@@ -50,6 +50,8 @@ function ziz_init() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jqueryui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js');
 	wp_enqueue_script('app.js', '/wp-content/plugins/zizanie/js/app.js', array('jquery'), '1.0');
+	wp_enqueue_script('ckeditor', '/wp-content/plugins/zizanie/ckeditor/ckeditor.js');
+	wp_enqueue_script('ckeditor_jquery', '/wp-content/plugins/zizanie/ckeditor/adapters/jquery.js',array('jquery'));
 	
 	//Add CSS files
 	wp_enqueue_style('styles.css', '/wp-content/plugins/zizanie/css/styles.css');
@@ -69,6 +71,7 @@ function ziz_comment_form_defaults($defaults) {
 	
 	$defaults['fields']['rage'] = 	'<p class="comment-form-url"><label for="url">' . __( 'Website' ) . '</label>' .
 		            				'<div class="slider"></div></p>';
+	$defaults['comment_field'] = '<div class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><div class="zizanie-comment-editor"></div></div>';
 	
 	return $defaults;
 	

@@ -9,6 +9,7 @@
 				
 			});	
 			
+			$(".zizanie-comment-editor").ckeditor();
 			
 		}
 		
